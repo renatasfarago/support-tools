@@ -50,5 +50,18 @@ DRY_RUN=false # true to simulate without updating assets
 
 Run the script:
 
-node index.js
+npm start
+
+-------
+The number of tokens consumed per image when generating alt text depends on two main factors:
+The AI model used: Different models have different tokenization costs for images.
+Image resolution and content: Larger or more complex images tend to consume more tokens, since vision tokenization is proportional to the amount of visual information processed.
+
+Below is an estimate of the expected token usage with GPT-4o:
+
+1 asset consumes an average of 290 credits
+
+10 assets consume an average of 293.6 credits
+
+100 assets consume an average of 293.6 credits
 
